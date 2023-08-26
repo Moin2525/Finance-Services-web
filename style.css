@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 13rem;
+}
+
+.home::before {
+    content: '';
+    background: url(./offices.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    height: 112%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.home h1 {
+    font-size: 3rem;
+    padding: 0.1rem 0;
+}
+
+.home h3 {
+    padding: 1.5rem 0;
+    font-weight: normal;
+}
+
+.home button {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 0.7rem 2.5rem;
+    background: none;
+}
+
+.home button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    outline: none;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services h2 {
+    font-weight: normal;
+    padding: 1rem;
+}
+
+.services h1 {
+    font-size: 4rem;
+    font-weight: inherit;
+    padding: 0.5rem;
+}
+
+.services span {
+    padding: 0 22rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    margin: 3rem;
+    font-weight: lighter;
+}
+
+.bc,
+.invest {
+    padding: 2rem;
+    padding-right: 15.2rem;
+}
+
+.ac,
+.mark {
+    padding: 2rem;
+    padding-left: 16rem;
+}
+
+.box1 h2 {
+    font-weight: normal;
+    padding: 0.5rem;
+}
+
+.box2 h2 {
+    font-weight: normal;
+    padding: 0.5rem;
+}
+
+.box1 p {
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+.box2 p {
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+.services a {
+    color: black;
+}
+
+.box a {
+    color: black;
+}
+
+.box::before {
+    content: '';
+    background: url(./man.png) no-repeat center center/cover;
+    position: absolute;
+    left: 28rem;
+    height: 86%;
+    width: 32%;
+    z-index: -1;
+}
+
+.about {
+    background-color: #3f5782;
+    position: absolute;
+    top: 92rem;
+    padding: 3rem 22rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.about h1 {
+    font-size: 3.3rem;
+    font-weight: normal;
+}
+
+.about h1,
+p {
+    padding: 1rem;
+}
+
+.about p {
+    font-size: 17px;
+}
+
+.data div {
+    display: inline-flex;
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 5rem 0.3rem;
+}
+
+.business {
+    position: absolute;
+    top: 123rem;
+    display: flex;
+}
+
+.busin {
+    padding: 6rem 9rem;
+}
+
+.busin div {
+    font-size: 2.5rem;
+    font-style: inherit;
+}
+
+.busin p {
+    font-size: 25px;
+    font-variant: normal;
+}
+
+.busin span {
+    font-size: large;
+    font-style: italic;
+}
+
+.aboutus {
+    padding: 7rem;
+}
+
+.aboutus div {
+    font-size: 2rem;
+}
+
+.aboutus p {
+    font-style: italic;
+}
+
+.aboutus button {
+    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.3rem 2rem;
+    margin: 2rem 0;
+    background: none;
+    cursor: pointer;
+}
+
+.aboutus button:hover {
+    color: white;
+    background-color: black;
+}
+
+.client {
+    position: absolute;
+    bottom: -156rem;
+    display: flex;
+}
+
+.client img {
+    padding: 0 6rem;
+}
+
+.ourCli {
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.class {
+    font-size: 3.5rem;
+}
+
+.ourCli p {
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.ourCli h4 {
+    font-size: 1.5rem;
+}
+
+.happy {
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.contact {
+    position: absolute;
+    top: 199rem;
+    display: flex;
+    padding-left: 5.7rem;
+}
+
+form {
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 8rem;
+    padding-left: 1rem;
+    font-weight: bolder;
+}
+
+form div {
+    font-size: 1.5rem
+}
+
+form div[type='a'] {
+    font-size: 1.5rem;
+}
+
+input {
+    border: none;
+    border-bottom: 4px solid black;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.contact button {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 0.7rem 2rem;
+    margin: 1.5rem 14rem;
+    cursor: pointer;
+    position: relative;
+    right: 14rem;
+}
+
+select,
+option {
+    border: none;
+    border-bottom: 4px solid black;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+input[type='checkbox'] {
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    bottom: -203rem;
+    color: white;
+    background-color: #333333;
+}
